@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js" defer></script>
+    <script src="https://code.highcharts.com/js/highcharts.js"></script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-circle" id="tooltip-circle-1"></div>
+        <div class="tooltiptext" id="tooltiptext-1">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-1"></div>labour
+            </h2>
+            <hr>
+            <p>In the throes of <b>labour</b>, safety felt distant, eclipsed by relentless waves of pain. Confusion
+                clouded my
+                thoughts, but amidst the turmoil, loved ones’ whispers anchored me, guiding me toward a safe harbor
+                beyond that awful hospital room.</p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+            <br>
+            <div class="key-flex">
+                <div class="chart-key" id="confused-key"></div>
+                <div class="view">confused/confusion</div>
+            </div>
+            <div class="key-flex">
+                <div class="chart-key" id="safe-key"></div>
+                <div class="view">safe/safety</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="page-items">
+                <div><img src="./images/person-circle-sharp-svgrepo-com.svg" id="avatar" class="avatar"></div>
+
+                <a href="https://tinyletter.com/" target="_blank">
+                    <div class="contributer-name">Anonymous <img src="./images/burkina-faso-flag.jpg" id="flag"
+                            class="flag"></div>
+                    <div class="view">Read full entry</div>
+                </a>
+
+                <div><img src="./images/arrow-right.svg" alt="arrow" class="arrow"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-circle" id="tooltip-circle-2"></div>
+        <div class="tooltiptext" id="tooltiptext-2">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-2"></div>she/her
+            </h2>
+            <hr>
+            <p>I remember thinking of novels I’d read before about mums being brave for their children; how being brave
+                for the children required super human effort but was also, almost effortless, because immediately
+                <b>she</b>
+                knew it was required to protect them.
+            </p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+            <br>
+            <a href="#tooltipcircle-6">
+                <div class="key-flex">
+                    <div class="chart-key" id="remember-key"></div>
+                    <div class="view">remember</div>
+                </div>
+            </a>
+            <div class="key-flex">
+                <div class="chart-key" id="brave-key"></div>
+                <div class="view">brave</div>
+            </div>
+            <div class="key-flex">
+                <div class="chart-key" id="human-key"></div>
+                <div class="view">human</div>
+            </div>
+            <div class="key-flex">
+                <div class="chart-key" id="children-key"></div>
+                <div class="view">children</div>
+            </div>
+            <br>
+            <br>
+            <div class="page-items">
+                <div><img src="./images/bio+pic.jpeg" id="avatar" class="avatar"></div>
+
+                <a href="https://open.substack.com/pub/deemarco/p/day-1-21?utm_campaign=post&utm_medium=web"
+                    target="_blank">
+                    <div class="contributer-name">Dee Marco <img src="./images/Flag_of_South_Africa.svg.png" id="flag"
+                            class="flag"></div>
+                    <div class="view">Read full entry</div>
+                </a>
+                <div><img src="./images/arrow-right.svg" alt="arrow" class="arrow"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-circle" id="tooltip-circle-3"></div>
+        <div class="tooltiptext" id="tooltiptext-3">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-3"></div>one
+            </h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-circle" id="tooltip-circle-4"></div>
+        <div class="tooltiptext" id="tooltiptext-4">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-4"></div>body
+            </h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-circle" id="tooltip-circle-5"></div>
+        <div class="tooltiptext" id="tooltiptext-5">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-5"></div>baby
+            </h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip-6">
+        <div class="tooltip-circle" id="tooltip-circle-6"></div>
+        <div class="tooltiptext" id="tooltiptext-6">
+            <h2 class="title-flex">
+                <div class="circle" id="circle-6"></div>remember
+            </h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <hr>
+            <div class="next">Next mention</div>
+            <hr>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <div class="key-flex">
+            <div class="chart-key" id="she-key"></div>
+            <div class="view">she/her</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="labour-key"></div>
+            <div class="view">labour</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="baby-key"></div>
+            <div class="view">baby</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="one-key"></div>
+            <div class="view">one</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="body-key"></div>
+            <div class="view">body</div>
+        </div>
+        <a href="#tooltipcircle-6">
+            <div class="key-flex">
+                <div class="chart-key" id="remember-key"></div>
+                <div class="view">remember</div>
+            </div>
+        </a>
+        <div class="key-flex">
+            <div class="chart-key" id="brave-key"></div>
+            <div class="view">brave</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="human-key"></div>
+            <div class="view">human</div>
+        </div>
+        <div class="key-flex">
+            <div class="chart-key" id="children-key"></div>
+            <div class="view">children</div>
+        </div>
+      </div>
+
+    <h2 class="day-title">day one</h2>
+
+    <br>
+    <br>
+    
+    <!-- <div id="container"></div>
+
+    <h2 class="day-title">day two</h2> -->
+
+
+
+    <script>
+        const tooltips = document.querySelectorAll(".tooltip");
+        const sheKey = document.getElementById("she-key");
+        const tooltipTexts = document.querySelectorAll(".tooltiptext");
+    
+        tooltips.forEach((tooltip, index) => {
+            const tooltipText = tooltip.querySelector(".tooltiptext");
+            const tooltipCircle = tooltip.querySelector(".tooltip-circle");
+    
+            let tooltipVisible = false;
+    
+            tooltip.addEventListener("mouseenter", function () {
+                tooltipText.style.visibility = "visible";
+                tooltipText.style.opacity = 1;
+            });
+    
+            tooltip.addEventListener("mouseleave", function () {
+                if (!tooltipVisible) {
+                    tooltipText.style.visibility = "hidden";
+                    tooltipText.style.opacity = 0;
+                }
+            });
+    
+            tooltipCircle.addEventListener("click", function (event) {
+                event.stopPropagation();
+                tooltipVisible = !tooltipVisible;
+            });
+    
+            document.addEventListener("click", function () {
+                tooltipVisible = false;
+                tooltipText.style.visibility = "hidden";
+                tooltipText.style.opacity = 0;
+            });
+        });
+    
+        // Add event listener to she-key
+        sheKey.addEventListener("click", function() {
+
+            console.log("hello!")
+            // Hide all tooltips
+            tooltipTexts.forEach(tooltipText => {
+                tooltipText.style.visibility = "visible";
+                tooltipText.style.opacity = 1;
+            });
+    
+            // Show tooltip for she-key
+            const tooltipShe = document.getElementById("tooltiptext-2");
+            tooltipShe.style.visibility = "visible";
+            tooltipShe.style.opacity = 1;
+        });
+    </script>
+
+</body>
+
+</html>

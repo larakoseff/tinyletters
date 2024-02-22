@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<!-- custom fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+<head>
+    <style>
+        * {
+            font-family: "Inter", sans-serif;
+            text-align: left;
+        }
+
+        body {
+            background-color: #f1fbf8;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            width: 220px;
+            height: 420px;
+            background-color: #ffffff;
+            border-style: solid;
+            border-width: 0.6px;
+            border-color: rgb(0, 0, 0);
+            text-align: left;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            border-radius: 20px;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        } */
+        
+
+        .tooltip-circle {
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #tooltip-circle-1 {
+            width: 60px;
+            height: 60px;
+            background-color: #f192d0;
+            position: fixed;
+            top: 180px;
+            right: 120px;
+        }
+
+        #tooltip-circle-2 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-3 {
+            width: 40px;
+            height: 40px;
+            background-color: #36f5ce;
+            position: fixed;
+            top: 50px;
+            right: 300px;
+        }
+
+        #tooltip-circle-4 {
+            width: 50px;
+            height: 50px;
+            background-color: #594636;
+            position: fixed;
+            top: 200px;
+            right: 300px;
+        }
+
+        #tooltip-circle-5 {
+            width: 30px;
+            height: 30px;
+            background-color: #f1f68f;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-6 {
+            width: 30px;
+            height: 30px;
+            background-color: #4a56fb;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-7 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-8 {
+            width: 40px;
+            height: 40px;
+            background-image: url(../images/water_MR.jpg);
+            position: fixed;
+            top: 300px;
+            right: 180px;
+        }
+
+        #tooltip-circle-9 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-10 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-11 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        #tooltip-circle-12 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: fixed;
+            top: 80px;
+            right: 180px;
+        }
+
+        .key-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chart-key {
+            width: 30px;
+            height: 8px;
+        }
+
+        #remember-key {
+            background-color: #4a56fb;
+        }
+
+        #brave-key {
+            background-color: #495a1d;
+        }
+
+        #children-key {
+            background-color: #f1fa27;
+        }
+
+        #human-key {
+            background-color: #f17e79;
+            box-shadow: inset 0 0 3px rgb(241, 241, 244);
+        }
+
+        #confused-key {
+            background-color: #a49d9a;
+        }
+
+        #safe-key {
+            background-color: #b4d8c2;
+
+        }
+
+        #tooltiptext-2 {
+            position: fixed;
+            top: 10;
+            right: 0;
+        }
+
+        .flag {
+            height: 8px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-2 {
+            width: 20px;
+            height: 20px;
+            background-color: #f192d0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .contributer-name {
+            font-weight: 500;
+        }
+
+        .view {
+            font-size: x-small;
+        }
+
+        .next {
+            font-size: x-small;
+            text-align: right;
+        }
+
+        .title-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .arrow {
+            height: 25px;
+        }
+
+        .page-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .day-title {
+            padding: 50px;
+        }
+
+        p {
+            font-size: small;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="text-align:center;">
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="tooltip-container">
+        <div class="tooltip" id="tooltip">
+            <div class="tooltip-circle" id="tooltip-circle-1"></div>
+            <div class="tooltiptext" id="tooltiptext-1">
+                <h2 class="title-flex">
+                    <div class="circle-2" id="circle-2"></div>she/her
+                </h2>
+                <hr>
+                <p>I remember thinking of novels I’d read before about mums being brave for their children; how being
+                    brave
+                    for the children required super human effort but was also, almost effortless, because immediately
+                    <b>she</b>
+                    knew it was required to protect them.
+                </p>
+                <hr>
+                <div class="next">Next mention</div>
+                <hr>
+                <br>
+                <div class="key-flex">
+                    <div class="chart-key" id="remember-key"></div>
+                    <div class="view">remember</div>
+                </div>
+                <div class="key-flex">
+                    <div class="chart-key" id="brave-key"></div>
+                    <div class="view">brave</div>
+                </div>
+                <div class="key-flex">
+                    <div class="chart-key" id="human-key"></div>
+                    <div class="view">human</div>
+                </div>
+                <div class="key-flex">
+                    <div class="chart-key" id="children-key"></div>
+                    <div class="view">children</div>
+                </div>
+                <br>
+                <br>
+                <div class="page-items">
+                    <div><img src="../images/bio+pic.jpeg" id="avatar" class="avatar"></div>
+
+                    <a href="https://open.substack.com/pub/deemarco/p/day-1-21?utm_campaign=post&utm_medium=web"
+                        target="_blank">
+                        <div class="contributer-name">Dee Marco <img src="../images/Flag_of_South_Africa.svg.png"
+                                id="flag" class="flag"></div>
+                        <div class="view">Read full entry</div>
+                    </a>
+                    <div><img src="../images/arrow-right.svg" alt="arrow" class="arrow"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tooltip-container">
+            <div class="tooltip" id="tooltip">
+                <div class="tooltip-circle" id="tooltip-circle-2"></div>
+                <div class="tooltiptext" id="tooltiptext-2">
+                    <h2 class="title-flex">
+                        <div class="circle" id="circle"></div>labour
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="tooltip-circle" id="tooltip-circle-3"></div>
+        <div class="tooltip-circle" id="tooltip-circle-4"></div>
+        <div class="tooltip-circle" id="tooltip-circle-5"></div>
+        <div class="tooltip-circle" id="tooltip-circle-6"></div>
+        <div class="tooltip-circle" id="tooltip-circle-7"></div>
+        <div class="tooltip-circle" id="tooltip-circle-8"></div>
+        <div class="tooltip-circle" id="tooltip-circle-9"></div>
+        <div class="tooltip-circle" id="tooltip-circle-10"></div>
+        <div class="tooltip-circle" id="tooltip-circle-11"></div>
+        <div class="tooltip-circle" id="tooltip-circle-12"></div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="day-title">day one</h2>
+
+        <script>
+            const tooltips = document.querySelectorAll(".tooltip");
+
+            tooltips.forEach(tooltip => {
+                const tooltipText = tooltip.querySelector(".tooltiptext");
+                const tooltipCircle = tooltip.querySelector(".tooltip-circle");
+
+                let tooltipVisible = false;
+
+                tooltip.addEventListener("mouseenter", function () {
+                    tooltipText.style.visibility = "visible";
+                    tooltipText.style.opacity = 1;
+                });
+
+                tooltip.addEventListener("mouseleave", function () {
+                    if (!tooltipVisible) {
+                        tooltipText.style.visibility = "hidden";
+                        tooltipText.style.opacity = 0;
+                    }
+                });
+
+                tooltipCircle.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    tooltipVisible = !tooltipVisible;
+                });
+
+                document.addEventListener("click", function () {
+                    tooltipVisible = false;
+                    tooltipText.style.visibility = "hidden";
+                    tooltipText.style.opacity = 0;
+                });
+            });
+        </script>
+
+</body>
+
+</html>
